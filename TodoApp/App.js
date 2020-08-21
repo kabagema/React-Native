@@ -10,15 +10,15 @@ import React from "react"
 import TodoItem from "./TodoItem"
 import todosData from "./todosData"
 
+
 function App() {
+    
+    const Data = todosData.map(todo => <TodoItem key={todo.id} item={todo} />)
     return (
         <div className="todo-list">
-            <TodoItem />
-            <TodoItem />
-            <TodoItem />
-            <TodoItem />
+            {Data}
         </div>
     )
 }
 
-export default App
+export default App 
