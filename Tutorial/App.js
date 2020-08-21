@@ -1,7 +1,7 @@
 import React from "react"
 
-import Joke from "./Joke"
-
+// import Joke from "./Joke"
+/*
 function App() {
     return (
         <div>
@@ -34,6 +34,19 @@ function App() {
             
         </div>
     )
+}
+*/
+
+import Product from "./Product"
+
+function App() {
+    
+    const data = productsData.map(item => <Product  key={item.id} product={item}/>)
+  return (
+    <div>
+        {data}
+    </div>
+  )
 }
 
 export default App
