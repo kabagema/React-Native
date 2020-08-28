@@ -1,6 +1,4 @@
 .app{
-  width: 100%;
-  max-width: 100vw; /*100 view width */
+  width: 100vw; /*100 view width */
   background-image: linear-gradient(to right, #051421, #042727);
-  margin: 0 auto;
 }
